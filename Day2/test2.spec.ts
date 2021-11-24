@@ -13,10 +13,10 @@ describe('AdventCalc2', function () {
             assert.equal(result, 2);
         });
 
-        it('should return puzzle result 788739', function () {
+        it('should return puzzle result 447', function () {
             var result = passPolicy.passwordPhilosophy(input);
             console.log(result);
-            assert.equal(result, 788739);
+            assert.equal(result, 447);
         });
 
     });

@@ -9,18 +9,16 @@ export function passwordPhilosophy(advList: string[]): number {
     let highestNb = parseInt(numbers[1]);
     const letter = passPolicy[1].charAt(0);
     const password = passPolicy[2];
-    let passwordMatchArray = password.match(letter);
+    let passwordMatchArray = password.split(letter);
     let nbOfOccurence: number = 0;
     if (passwordMatchArray) {
-      nbOfOccurence = passwordMatchArray.length;
+      nbOfOccurence = passwordMatchArray.length - 1;
     }
-    console.log('nbOfOccurence', nbOfOccurence)
-    if (nbOfOccurence > lowestNb && nbOfOccurence < highestNb) {
+    if (nbOfOccurence >= lowestNb && nbOfOccurence <= highestNb) {
       validPasswordNb++;
     }
-    console.log('validPasswordNb', validPasswordNb)
   }
-  return null;
+  return validPasswordNb;
 }
 
 
