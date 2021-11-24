@@ -4,7 +4,8 @@
   "description": "day 1 2020 advent of code",
   "main": "index.js",
   "scripts": {
-    "test": "mocha './Day1/test.ts'"
+    "start": "tsc && node dist/app.js",
+    "test": "mocha --require ts-node/register './Day2/test2.spec.ts'"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,15 @@
   "author": "quentin garlan",
   "license": "ISC",
   "devDependencies": {
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.11.10",
+    "esm": "^3.2.25",
     "mocha": "^9.1.3",
-    "typescript": "^4.5.2"
+    "typescript": "^4.5.2",
+    "typescript-require": "^0.3.0"
+  },
+  "dependencies": {
+    "assert": "^2.0.0",
+    "ts-node-register": "^1.0.0"
   }
 }
