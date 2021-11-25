@@ -14,7 +14,6 @@ export function passwordPhilosophy(advList: string[]): number {
       validPasswordNb++;
     }
   }
-  console.log('validPasswordNb', validPasswordNb)
   return validPasswordNb;
 }
 
