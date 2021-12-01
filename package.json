@@ -1,7 +1,7 @@
 {
   "name": "challenge2020day1",
   "version": "1.0.0",
-  "description": "day 1 2020 advent of code",
+  "description": "Advent of code 2020",
   "main": "index.js",
   "scripts": {
     "start": "tsc && node dist/app.js",
